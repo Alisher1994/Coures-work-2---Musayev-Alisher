@@ -8,6 +8,7 @@
     font-weight: bold;
     line-height: 25px;
     font-style: normal;
+    text-decoration: none;
     font-family: "Space Mono", "Arial", monospace;
 }
 
@@ -33,18 +34,19 @@
 }
 
 // saytdagi barcha custom linklar uchun stil ko'rinishi uchun stil 
-@mixin link-style() {
+@mixin link-style {
     margin: 0;
     padding: 0;
     border: none;
     font-size: 15px;
+    color: #ffffff;
     min-width: 180px;
     font-weight: 600;
-    color: #fcb72b;
     line-height: 28px;
     font-weight: bold;
     font-style: normal;
     padding: 14px 44px;
+    background: #fcb72b;
     text-decoration: none;
     box-sizing: border-box;
     text-transform: capitalize;

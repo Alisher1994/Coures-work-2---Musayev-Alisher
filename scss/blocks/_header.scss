@@ -1,0 +1,117 @@
+// header block for desktop. Header ishlashi uchun scss orqali mixin ulangan. Stilni o'zgartirish uchun mixinga kirib o'zgartirish kere. headerga ishlatilgan mixinlar: nav-text, link-style
+
+.header {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    position: fixed;
+    background-color: #ffffff;
+
+    .hwrapper {
+        display: flex;
+        width: 1110px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+
+        &__button {
+            display: none;
+        }
+
+        &__img {
+            width: 108px;
+            height: 28px;
+            display: block;
+            margin-right: 62px;
+        }
+    }
+
+    .nav {
+        &__list {
+            display: flex;
+            list-style-type: none;
+        }
+
+        &__items {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+        &__link {
+            @include nav-text;
+        }
+
+        &__items:first-child {
+            margin-left: 0;
+        }
+
+        &__items:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    .hwrapper__link {
+        margin-right: auto;
+        @include link-style;
+    }
+
+}
+
+// end of header desktop
+
+// header block for tablet.
+@media screen and (max-width: 768px) {
+    .header {
+        top: 0;
+        height: 96px;
+        position:fixed;
+        padding: 22px 40px;
+
+
+        &__wrapper {
+            width: 689px;
+
+
+            &__button {
+                display: none;
+            }
+        }
+    }
+}
+
+
+// header block for mobile.
+@media screen and (max-width: 375px) {
+    .header {
+        top: 0;
+        height: 64px;
+        position: fixed;
+        padding: 22px 32px;
+
+        .hwrapper {
+
+            &__button {
+                width: 20px;
+                height: 20px;
+                border: none;
+                display: flex;
+                background-size: 20px 16px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-image: url(./../img/header/burger.svg);
+            }
+
+            &__img {
+                width: 76px;
+                height: 20px;
+                margin-right: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .nav, .hwrapper__link {
+        display: none;
+    }
+}

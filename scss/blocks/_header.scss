@@ -1,11 +1,10 @@
 // header block for desktop. Header ishlashi uchun scss orqali mixin ulangan. Stilni o'zgartirish uchun mixinga kirib o'zgartirish kere. headerga ishlatilgan mixinlar: nav-text, link-style
 
 .header {
+    z-index: 1;
     width: 100%;
     height: 96px;
     display: flex;
-    z-index: 1;
-
     position: fixed;
     padding: 22px 40px;
     background-color: #ffffff;
@@ -70,7 +69,7 @@
 
 // end of header desktop
 
-// header block for tablet.
+// responsive for tablet.
 @media screen and (max-width: 768px) {
     .header {
         top: 0;
@@ -81,35 +80,35 @@
 
         .hwrapper {
             width: 689px;
-    
+
             &__img {
                 margin-right: 58px;
             }
-    
+
             &__button {
                 display: none;
             }
         }
     }
 }
+// end of responsive tablet
 
-
-// header block for mobile.
+// responsive for mobile.
 @media screen and (max-width: 375px) {
     .header {
         top: 0;
-        max-width: 375px;
         height: 64px;
         position: fixed;
+        max-width: 375px;
         padding: 24px 32px;
         align-items: center;
-        
+
         .hwrapper {
-            width: 100%;
+            width: 310px;
 
             &__button {
                 width: 20px;
-                height: 20px;
+                height: 16px;
                 border: none;
                 display: flex;
                 background-size: 20px 16px;
@@ -119,10 +118,17 @@
                 background-image: url(./../img/header/burger.svg);
             }
 
-            &__img {
+            &__hyperlink {
                 width: 76px;
                 height: 20px;
                 margin: 0 auto;
+                box-sizing: border-box;
+
+            }
+
+            &__img {
+                width: 76px;
+                height: 20px;
             }
         }
     }
@@ -132,3 +138,4 @@
         display: none;
     }
 }
+// end of responsive mobile

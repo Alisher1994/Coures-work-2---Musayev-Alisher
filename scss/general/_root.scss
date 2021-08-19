@@ -6,3 +6,9 @@
     --store-bg: url(./../img/store/circle.svg);
     --information-bg: url(./..img/circle-bg.svg);
 }
+
+
+::selection {
+    color: #333a44;
+    background: #fcb72b;
+  }

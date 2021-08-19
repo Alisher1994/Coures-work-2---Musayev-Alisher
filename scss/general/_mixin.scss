@@ -1,4 +1,3 @@
-
 // saytdagi header va footerdagi menyu stillari uchun stil
 @mixin nav-text {
     margin: 0;
@@ -17,7 +16,7 @@
 
 @mixin nav-text-hover {
     color: #fcb72b;
-    
+
 }
 
 // saytning asosiy kirishdagi h1 matni uchun stil
@@ -38,14 +37,17 @@
     margin: 0;
     padding: 0;
     border: none;
+    width: 196px;
+    height: 53px;
     font-size: 15px;
     color: #ffffff;
-    min-width: 180px;
     font-weight: 600;
     line-height: 28px;
     font-weight: bold;
     font-style: normal;
     padding: 14px 44px;
+    text-align: center;
+
     background: #fcb72b;
     text-decoration: none;
     box-sizing: border-box;
@@ -55,9 +57,14 @@
 
 // saytdagi linklar uchun hover holati stili
 @mixin link-style-hover {
-    color: #fcb72b; 
+    width: 196px;
+    height: 53px;
+    color: #fcb72b;
+    padding: 10px 44px;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid #fcb72b;
     background-color: transparent;
-    border: 3px solid #fcb72b inset;
 }
 
 // h4 - tegi uchun ishlatiladigan stillar
@@ -76,7 +83,7 @@
 // h4 - tegi ostida keladigan matn uchun stil
 @mixin heading-dfn {
     font-size: 15px;
-    color: #939caa;
+    color: #ffffff;
     line-height: 25px;
     font-style: normal;
     font-weight: normal;
@@ -97,6 +104,19 @@
     font-family: "Space Mono", "Arial", monospace;
 }
 
+// h3 - tegi uchun ishlatiladigan stillar
+@mixin heading-title-375 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    font-style: normal;
+    letter-spacing: -2.14286px;
+    font-family: "Space Mono", "Arial", monospace;
+}
+
 // h3 - tegi ostida keluvchi matn uchun stil
 @mixin dfn {
     margin: 0;
@@ -108,4 +128,3 @@
     font-weight: normal;
     font-family: "Lexend Deca", "Arial", sans-serif;
 }
-
